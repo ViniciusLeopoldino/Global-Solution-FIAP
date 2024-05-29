@@ -1,17 +1,17 @@
-document.getElementById('profile-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const bio = document.getElementById('bio').value;
-    alert(`Profile saved!\nName: ${name}\nBio: ${bio}`);
-});
+// document.getElementById('profile-form').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const name = document.getElementById('name').value;
+//     const bio = document.getElementById('bio').value;
+//     alert(`Profile saved!\nName: ${name}\nBio: ${bio}`);
+// });
 
-document.getElementById('activity-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const title = document.getElementById('title').value;
-    const description = document.getElementById('description').value;
-    const location = document.getElementById('location').value;
-    alert(`Activity published!\nTitle: ${title}\nDescription: ${description}\nLocation: ${location}`);
-});
+// document.getElementById('activity-form').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const title = document.getElementById('title').value;
+//     const description = document.getElementById('description').value;
+//     const location = document.getElementById('location').value;
+//     alert(`Activity published!\nTitle: ${title}\nDescription: ${description}\nLocation: ${location}`);
+// });
 
 function initMap() {
     const mapContainer = document.getElementById('map-container');
