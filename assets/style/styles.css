@@ -7,7 +7,41 @@
     box-sizing: border-box;
 }
 
+/* sobre nós HOME */
+/* Estilos para a seção Sobre Nós */
+#about {
+    background-color: #f0f8ff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Para separar do próximo conteúdo */
+}
 
+#about h2 {
+    text-align: center;
+    color: #009e91;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.about-content ul li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* sobre nós HOME fim */
 
 header {
     display: flex;
@@ -15,7 +49,7 @@ header {
     top: 0; /* Alinha o cabeçalho ao topo da página */
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
     height: auto;
-    background-color: #009e91;  /* HEXADECIMAL DO LOGO */
+    background-color: #009e9195;  
     color: white;
     padding: 5px;
     text-align: center;
@@ -44,13 +78,13 @@ header p {
 
 nav ul {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 500px;
     text-align: right;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -97,7 +131,7 @@ form button:hover {
 }
 
 footer {
-    background-color: #009e91;
+    background-color: #009e9195;
     color: white;
     text-align: center;
     padding: 5px;
@@ -177,6 +211,11 @@ footer p {
     font-size: 30px;
     color: #000000;
     }
+
+    /* _______________________chatbot____________________________________ */
+
+    
+    /* ___________________fimchatbot___________________________________________ */
 
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {

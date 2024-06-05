@@ -51,3 +51,16 @@ $(document).ready(function() {
         toggleMenu();
     };
 });
+
+
+// chatbot
+// $(document).ready(function(){
+    // Esconder o chat inicialmente
+    // $("#chatContainer").hide();
+    
+    // Mostrar o chat quando o ícone for clicado
+//     $("#chatToggle").click(function(){
+//         $("#chatContainer").slideToggle();
+//     });
+// });
+
