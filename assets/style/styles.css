@@ -1,5 +1,3 @@
-/* Estilos para dispositivos desktop */
-
 * {
     font-family: sans-serif;
     margin: 0;
@@ -42,6 +40,7 @@
 }
 /* sobre nós HOME fim */
 
+/* ESTILO PARA HEADER */
 header {
     display: flex;
     position: fixed; /* Fixa o cabeçalho na parte superior */
@@ -50,20 +49,17 @@ header {
     height: auto;
     background-color: #009e9195;  
     color: white;
-    padding: 5px;
+    padding: 0;
     text-align: center;
     align-items: center;
     z-index: 9999; /* Garante que o cabeçalho esteja sempre na frente */
 }
 
 .logo-img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    padding: 0;
 }
-
-/* .logo {
-    margin-right: auto;
-} */
 
 header h1 {
     margin: 0;
@@ -75,10 +71,133 @@ header p {
     margin: 0;
 }
 
+/* FIM ESTILO PARA HEADER*/
+
+
+/* ESTILO PARA LOGIN */
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Para centralizar verticalmente na tela inteira */
+}
+
+#login h2 {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+#login form {
+    width: 300px; /* Largura do formulário */
+    text-align: center; /* Centralizar conteúdo do formulário */
+}
+
+#login form label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#login form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#login form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#login form button a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor do texto do link */
+}
+
+#login form button:first-child {
+    background-color: #009e91; /* Cor de fundo para o botão de login */
+}
+
+#login form button:last-child {
+    background-color: #ccc; /* Cor de fundo para o botão de voltar */
+}
+
+/* FIM ESTILO PARA LOGIN */
+
+/* ESTILO PARA CADASTRO */
+
+#cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Para centralizar verticalmente na tela inteira */
+}
+
+#cadastro h2 {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+#cadastro form {
+    width: 300px; /* Largura do formulário */
+    text-align: center; /* Centralizar conteúdo do formulário */
+}
+
+#cadastro form label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#cadastro form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#cadastro form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#cadastro form button a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor do texto do link */
+}
+
+#cadastro form button:first-child {
+    background-color: #009e91; /* Cor de fundo para o botão de cadastro */
+}
+
+#cadastro form button:last-child {
+    background-color: #ccc; /* Cor de fundo para o botão de voltar */
+}
+
+/* FIM ESTILO PARA CADASTRO */
+
+/* ESTILO INDEX */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; 
+}
+
+.container h2 {
+    margin-bottom: 20px; 
+}
+
+/* FIM ESTILO INDEX */
+
+
 nav ul {
     list-style-type: none;
-    padding-left: 500px;
-    text-align: right;
 }
 
 nav ul li {
@@ -95,10 +214,6 @@ main {
     padding: 80px;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
 form label {
     display: block;
     margin-top: 1rem;
@@ -110,7 +225,7 @@ form input, form textarea {
     margin-top: 0.5rem;
 }
 
-form button {
+button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background-color: #009e91;
@@ -119,7 +234,12 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
     background-color: #5c5c5c;
 }
 
@@ -226,6 +346,7 @@ footer p {
     nav ul {
         display: flex; /* Exibe o menu principal como uma linha em dispositivos desktop */
         justify-content: center; /* Alinha os itens do menu ao centro */
+        height: 100%; /* Garante que o menu ocupe toda a altura do cabeçalho */
     }
 
     nav ul li {
