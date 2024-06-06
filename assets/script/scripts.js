@@ -13,14 +13,14 @@
 //     alert(`Activity published!\nTitle: ${title}\nDescription: ${description}\nLocation: ${location}`);
 // });
 
-function initMap() {
-    const mapContainer = document.getElementById('map-container');
-    mapContainer.innerHTML = 'Map functionality to be implemented';
-}
+// function initMap() {
+//     const mapContainer = document.getElementById('map-container');
+//     mapContainer.innerHTML = 'Map functionality to be implemented';
+// }
 
-window.onload = function() {
-    initMap();
-};
+// window.onload = function() {
+//     initMap();
+// };
 
 $(document).ready(function() {
     $('.menu-toggle').click(function() {

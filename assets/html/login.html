@@ -11,11 +11,11 @@
         <div class="logo">
             <img src="../img/logotipo_oceangreen-1.png" alt="OceanGreen" class="logo-img">
         </div>
-        <h1>OceanGreen</h1>
+        <!-- <h1>OceanGreen</h1> -->
     </header>
 
     <main>
-        <section id="login" class="login">
+        <section id="formulario" class="formulario">
             <h2>Entre</h2>
             <form id="login-form" action="../html/menu.html">
                 <label for="email">Email:</label>
@@ -24,8 +24,10 @@
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" placeholder="******" required>
         
-                <button type="submit"><a href="../html/menu.html">Entrar</a></button>
-                <button type="submit"><a href="../html/index.html">Voltar</a></button>
+                <div class="button">
+                    <a href="menu.html" id="button" class="button" onclick="showMessageSuccess()">Entrar</a>
+                    <a href="index.html" id="button" class="button">Voltar</a>
+                </div>
             </form>
         </section>        
     </main>

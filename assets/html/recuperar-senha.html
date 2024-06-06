@@ -16,19 +16,22 @@
 
     <main>
         <section id="formulario" class="formulario">
-            <h2>Cadastre-se</h2>
-            <form id="cadastro-form">
+            <h2>Recupere sua senha</h2>
+            <form id="reset-senha-form">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" placeholder="Insira seu nome" required>
         
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="nome@email.com" required>
         
-                <label for="password">Senha:</label>
+                <label for="password">Nova Senha:</label>
+                <input type="password" id="password" name="password" placeholder="******" required>
+
+                <label for="password">Repita a Nova Senha:</label>
                 <input type="password" id="password" name="password" placeholder="******" required>
         
                 <div class="button">
-                    <a href="index.html" id="button" class="button" onclick="showMessageSuccess()">Cadastrar</a>
+                    <a href="index.html" id="button" class="button" onclick="showMessageSuccess()">Recuperar</a>
                     <a href="index.html" id="button" class="button">Voltar</a>
                 </div>
             </form>
@@ -43,4 +46,3 @@
     <script src="../script/scripts.js"></script>
 </body>
 </html>
-

@@ -5,40 +5,35 @@
     box-sizing: border-box;
 }
 
-/* sobre nós HOME */
-/* Estilos para a seção Sobre Nós */
+/*ESTILO PARA PAGINA MENU*/
 #about {
-    background-color: #f0f8ff;
-    padding: 2rem;
+    background-color: #e3f2ff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem; /* Para separar do próximo conteúdo */
-}
+    margin-top: 2rem;
 
-#about h2 {
-    text-align: center;
-    color: #009e91;
-    margin-bottom: 1rem;
-}
+    & h2 {
+        text-align: center;
+        color: #009e91;
+        margin-bottom: 1rem;
+}}
 
 .about-content p {
     text-align: justify;
     margin-bottom: 1rem;
     line-height: 1.6;
     color: #333;
-}
-
-.about-content ul {
+& ul {
     margin: 1rem 0;
     padding-left: 1.5rem;
-}
+}}
 
 .about-content ul li {
     list-style-type: disc;
     margin-bottom: 0.5rem;
     color: #333;
 }
-/* sobre nós HOME fim */
 
 /* ESTILO PARA HEADER */
 header {
@@ -64,18 +59,22 @@ header {
 header h1 {
     margin: 0;
     margin-top: 2px;
+    padding-right: 20px;
     padding-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1);
 }
 
 header p {
     margin: 0;
 }
 
-/* FIM ESTILO PARA HEADER*/
+/* ESTILO PARA formulario */
 
-
-/* ESTILO PARA LOGIN */
-#login {
+#formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,103 +82,63 @@ header p {
     height: 75vh; /* Para centralizar verticalmente na tela inteira */
 }
 
-#login h2 {
+#formulario h2 {
     margin-bottom: 20px; /* Espaçamento inferior */
 }
 
-#login form {
+#formulario form {
     width: 300px; /* Largura do formulário */
     text-align: center; /* Centralizar conteúdo do formulário */
 }
 
-#login form label {
+#formulario form label {
     display: block;
     margin-top: 10px;
     text-align: left;
 }
 
-#login form input {
+#formulario form input {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-#login form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-#login form button a {
-    text-decoration: none; /* Remover sublinhado dos links */
-    color: white; /* Cor do texto do link */
-}
-
-#login form button:first-child {
-    background-color: #009e91; /* Cor de fundo para o botão de login */
-}
-
-#login form button:last-child {
-    background-color: #ccc; /* Cor de fundo para o botão de voltar */
-}
-
-/* FIM ESTILO PARA LOGIN */
-
-/* ESTILO PARA CADASTRO */
-
-#cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75vh; /* Para centralizar verticalmente na tela inteira */
-}
-
-#cadastro h2 {
-    margin-bottom: 20px; /* Espaçamento inferior */
-}
-
-#cadastro form {
-    width: 300px; /* Largura do formulário */
-    text-align: center; /* Centralizar conteúdo do formulário */
-}
-
-#cadastro form label {
+#button {
+    text-align: center;
     display: block;
-    margin-top: 10px;
-    text-align: left;
-}
-
-#cadastro form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-#cadastro form button {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
 }
 
-#cadastro form button a {
-    text-decoration: none; /* Remover sublinhado dos links */
-    color: white; /* Cor do texto do link */
+#button:first-child {
+    background-color: #009e91;
+    color: white;
 }
 
-#cadastro form button:first-child {
-    background-color: #009e91; /* Cor de fundo para o botão de cadastro */
+#button:last-child {
+    background-color: #ccc;
+    color: black;
 }
 
-#cadastro form button:last-child {
-    background-color: #ccc; /* Cor de fundo para o botão de voltar */
+#button:hover {
+    background-color: #5c5c5c;
 }
-
-/* FIM ESTILO PARA CADASTRO */
 
 /* ESTILO INDEX */
+#ibutton {
+    text-align: center;
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #009e91;
+}
+
+#ibutton:hover {
+    background-color: #5c5c5c;
+}
 
 .container {
     display: flex;
@@ -193,9 +152,13 @@ header p {
     margin-bottom: 20px; 
 }
 
-/* FIM ESTILO INDEX */
+/* ESTILO TEXT CONTENT */
 
-
+.text-content {
+    border: 1px solid #ccc;
+    padding: 9px;
+}
+/* ESTILO MENU */
 nav ul {
     list-style-type: none;
 }
@@ -204,12 +167,7 @@ nav ul li {
     display: inline;
     margin: 0 10px;
 }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
+/* ESTILO MAIN */
 main {
     padding: 80px;
 }
@@ -225,28 +183,20 @@ form input, form textarea {
     margin-top: 0.5rem;
 }
 
-button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #009e91;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
 a {
     text-decoration: none;
     color: white;
 }
 
-button:hover {
-    background-color: #5c5c5c;
+.rsenha {
+    color: rgb(0, 38, 255);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-#map-container {
-    width: 100%;
-    height: 400px;
-    background-color: #ecf0f1;
+#map-container img{
+    width: 50%;
+    height: 50%;
 }
 
 footer {
@@ -258,20 +208,15 @@ footer {
     width: 100%;
     height: auto;
     bottom: 0;
-}
 
-footer p {
+& p {
     margin: 0;
-}
+}}
+
+/* ESTILO PARA PAGINA DE INTEGRANTES */
 
 .integrantes-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 2rem;
-}
-
-.integrantes-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -280,51 +225,39 @@ footer p {
     color: #000000;
     width: 100%;
     height: auto;
-    position: right;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
-    padding-top: 10px;
+    padding: 30px;
     text-align: center;
-    }
+    border-radius: 5px;
     
-    .integrante {
+    & .integrante {  
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
     margin-right: 50px;
-    }
+    margin-left: 50px;
     
-    .integrante img {
+    
+    & img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
-    }
     
-    .integrante h2 {
+    
+    & h2 {
     margin: 0;
-    }
     
-    .integrante p {
+    
+    & p {
     margin: 0;
-    }
     
-    .integrante a {
+    
+    & a {
     text-decoration: none;
     color: blue;
-    }
-    
-    .github {
-    justify-content: center;
-    border-radius: 30px;
-    background-color: #ffffff;
-    color: #000000;
-    width: auto;
-    height: auto;
-    position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
-    text-align: center;
-    }
+    }}}}}}
     
     i {
     font-size: 30px;
@@ -333,10 +266,9 @@ footer p {
 
     /* _______________________chatbot____________________________________ */
 
-    
-    /* ___________________fimchatbot___________________________________________ */
+    /* ___________________fim chatbot___________________________________________ */
 
-/* Estilos para dispositivos móveis */
+/* ESTILO RESPONSIVO PARA DISPOSITIVOS MOVEIS */
 @media screen and (max-width: 768px) {
     header {
         padding: 0.5rem;
@@ -362,7 +294,7 @@ footer p {
         width: calc(100% - 1rem);
     }
 
-    /* Estilos para o menu hamburguer */
+    
     .menu-toggle {
         display: block; /* Exibindo o hamburguer em dispositivos móveis */
         position: fixed;
