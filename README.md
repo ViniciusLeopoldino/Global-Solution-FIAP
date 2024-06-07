@@ -32,7 +32,16 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para r
 ## Autores
 
  Vinicius Leopoldino
+
 [![Vinicius Leopoldino](https://skillicons.dev/icons?i=github&perline=1)](https://github.com/ViniciusLeopoldino)
+
+Pablo Lopes
+
+[![Pablo Lopes](https://skillicons.dev/icons?i=github&perline=1)](https://github.com/Pablo0703)
+
+Diego Santos
+
+[![Diego Santos](https://skillicons.dev/icons?i=github&perline=1)](https://github.com/sashabiceps)
 
 ## Licença
 
