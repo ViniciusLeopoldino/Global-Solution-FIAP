@@ -31,9 +31,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para r
 
 ## Autores
 
-Vinicius Leopoldino # Autores
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/ViniciusLeopoldino) | 
-| :---: | :---: | :---: |
+Vinicius Leopoldino 
 
 ## Licença
 
