@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OceanGreen</title>
+    <title>Fórum - OceanGreen</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/modal-test.css">
 </head>
 <body>
     <header>
@@ -28,38 +29,36 @@
             </ul>
         </nav>
     </header>
-   
     <main>
         <section id="forum">
             <h2>Fórum de Discussão</h2>
-            <div class="forum-posts">
-                <article class="post">
-                    <h3>Impacto da Poluição Marinha</h3>
-                    <p>Iniciado por <strong>Maria Silva</strong> em 05/06/2024</p>
-                    <p>Vamos discutir os principais impactos da poluição marinha em nossas praias e oceanos. Quais são as soluções possíveis?</p>
-                    <a href="#">Ler mais</a>
-                </article>
-                <article class="post">
-                    <h3>Conservação de Corais</h3>
-                    <p>Iniciado por <strong>João Santos</strong> em 10/06/2024</p>
-                    <p>Os corais estão desaparecendo rapidamente. Quais medidas podem ser tomadas para proteger esses ecossistemas vitais?</p>
-                    <a href="#">Ler mais</a>
-                </article>
-                <article class="post">
-                    <h3>Iniciativas de Limpeza</h3>
-                    <p>Iniciado por <strong>Ana Costa</strong> em 15/06/2024</p>
-                    <p>Compartilhe suas experiências e resultados de iniciativas de limpeza de praias e como elas podem ser organizadas.</p>
-                    <a href="#">Ler mais</a>
-                </article>
+            <div class="forum-posts" id="forum-posts">
+                <!-- Posts carregados dinamicamente -->
             </div>
-            <button type="button"><a href="../html/new_post.html">Novo Tópico</a></button>
+            <button type="button" id="load-more">Carregar Mais</button>
+            <button type="ibutton" id="ibutton" class="ibutton" onclick="showSuccessMessage()">Novo Tópico</a></button>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 OceanGreen. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="Imagem do Post">
+            <h3 id="modal-title"></h3>
+            <p id="modal-author-date"></p>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+    <script>
+        function showSuccessMessage() {
+            alert("Em breve você poderá adicionar novos tópicos!");
+        }
+    </script>
+    <script src="../script/forum.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/scripts.js"></script>
     

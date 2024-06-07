@@ -16,7 +16,7 @@
     & h2 {
         text-align: center;
         color: #009e91;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
 }}
 
 .about-content p {
@@ -42,7 +42,7 @@ header {
     top: 0; /* Alinha o cabeçalho ao topo da página */
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
     height: auto;
-    background-color: #009e9195;  
+    background-color: #5db0aa;  
     color: white;
     padding: 0;
     text-align: center;
@@ -194,15 +194,27 @@ a {
     text-decoration: underline;
 }
 
+/* ESTILO PARA O MAPA */
+
+#map-container {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
 
 #map-container img {
-    width: 100%;
-    height: 500px;
-    padding-left: 40px; 
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao zoom */
+}
+
+#map-container img.zoomable:hover {
+    transform: scale(1.2);
 }
 
 footer {
-    background-color: #009e9195;
+    background-color: #5db0aa;
     color: white;
     text-align: center;
     padding: 5px;
@@ -273,6 +285,7 @@ footer {
 /* ESTILO PARA CONTEUDO DAS PAGINAS FORUM, EVENTO E EDUCAÇÃO */
 
 /* Fórum */
+
 h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -360,6 +373,7 @@ h2 {
     text-decoration: none;
 }
 
+
 /* ESTILO RESPONSIVO PARA DISPOSITIVOS MOVEIS */
 @media screen and (max-width: 768px) {
     header {
@@ -445,3 +459,9 @@ h2 {
         display: block;
     }
 }
+
+@media (forced-colors: active) and (prefers-color-scheme: dark) {
+    .prefs__palette {
+      background-color: #000;
+    }
+  }

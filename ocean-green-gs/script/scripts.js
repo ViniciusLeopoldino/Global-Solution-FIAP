@@ -1,31 +1,8 @@
-// document.getElementById('profile-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const name = document.getElementById('name').value;
-//     const bio = document.getElementById('bio').value;
-//     alert(`Profile saved!\nName: ${name}\nBio: ${bio}`);
-// });
-
-// document.getElementById('activity-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const title = document.getElementById('title').value;
-//     const description = document.getElementById('description').value;
-//     const location = document.getElementById('location').value;
-//     alert(`Activity published!\nTitle: ${title}\nDescription: ${description}\nLocation: ${location}`);
-// });
-
-// function initMap() {
-//     const mapContainer = document.getElementById('map-container');
-//     mapContainer.innerHTML = 'Map functionality to be implemented';
-// }
-
-// window.onload = function() {
-//     initMap();
-// };
 
 $(document).ready(function() {
     $('.menu-toggle').click(function() {
         $(this).toggleClass('menu-open');
-        $('nav ul').slideToggle(); // ou $('nav ul').toggle();
+        $('nav ul').slideToggle(); 
     });
 
     // Função para verificar e exibir/ocultar o menu com base na largura da janela
@@ -35,11 +12,11 @@ $(document).ready(function() {
 
         // Verifica se a largura da janela é menor que 768 pixels (dispositivo móvel)
         if (window.innerWidth < 768) {
-            menuToggle.style.display = 'block'; // Exibe o menu hamburguer
-            navUL.style.display = 'none'; // Oculta o menu principal
+            menuToggle.style.display = 'block';
+            navUL.style.display = 'none'; 
         } else {
-            menuToggle.style.display = 'none'; // Oculta o menu hamburguer
-            navUL.style.display = 'block'; // Exibe o menu principal
+            menuToggle.style.display = 'none'; 
+            navUL.style.display = 'block'; 
         }
     }
 
@@ -53,14 +30,22 @@ $(document).ready(function() {
 });
 
 
-// chatbot
-// $(document).ready(function(){
-    // Esconder o chat inicialmente
-    // $("#chatContainer").hide();
-    
-    // Mostrar o chat quando o ícone for clicado
-//     $("#chatToggle").click(function(){
-//         $("#chatContainer").slideToggle();
-//     });
-// });
 
+// EDITAR PERFIL
+$(document).ready(function() {
+    $("#ibutton").click(function() {
+        // Habilita a edição dos campos de texto
+        $("#nome").attr("contenteditable", "true");
+        $("#bio").attr("contenteditable", "true");
+        // Troca o texto do botão de "Editar" para "Salvar"
+        $(this).text("Salvar");
+        // Adiciona a função para salvar as alterações
+        $(this).off("click").click(function() {
+            // Desabilita a edição dos campos de texto
+            $("#nome").removeAttr("contenteditable");
+            $("#bio").removeAttr("contenteditable");
+            // Troca o texto do botão de "Salvar" para "Editar"
+            $(this).text("Editar");
+        });
+    });
+});

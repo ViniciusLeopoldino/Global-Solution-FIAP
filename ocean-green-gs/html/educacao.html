@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OceanGreen</title>
+    <title>Educação - OceanGreen</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/modal-test.css">
 </head>
 <body>
     <header>
@@ -28,34 +29,32 @@
             </ul>
         </nav>
     </header>
-   
     <main>
         <section id="education">
             <h2>Recursos Educacionais</h2>
-            <div class="education-resources">
-                <article class="resource">
-                    <h3>Guia de Reciclagem</h3>
-                    <p>Um guia completo sobre como reciclar corretamente e os benefícios da reciclagem para o meio ambiente.</p>
-                    <a href="#">Baixar PDF</a>
-                </article>
-                <article class="resource">
-                    <h3>Vídeo: A Vida Marinha</h3>
-                    <p>Assista ao nosso documentário sobre a vida marinha e a importância de proteger os oceanos.</p>
-                    <a href="#">Assistir Vídeo</a>
-                </article>
-                <article class="resource">
-                    <h3>Curso Online: Conservação Marinha</h3>
-                    <p>Inscreva-se em nosso curso online gratuito sobre conservação marinha e aprenda com especialistas da área.</p>
-                    <a href="#">Inscreva-se Agora</a>
-                </article>
+            <div class="education-resources" id="education-resources">
+                <!-- Recursos carregados dinamicamente -->
             </div>
+            <button type="button" id="load-more-resources">Carregar Mais</button>
+            <button type="ibutton" id="ibutton" class="ibutton" onclick="showSuccessMessage()">Novas Contribuições</a></button>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 OceanGreen. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="Imagem do Recurso">
+            <h3 id="modal-title"></h3>
+            <p id="modal-author-date"></p>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+    <script>function showSuccessMessage() {alert("Em breve você poderá adicionar novos recursos educacionais!");}</script>
+    <script src="../script/educacao.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/scripts.js"></script>
     

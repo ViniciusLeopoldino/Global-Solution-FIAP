@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OceanGreen</title>
+    <title>Eventos - OceanGreen</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/modal-test.css">
 </head>
 <body>
     <header>
@@ -28,45 +29,33 @@
             </ul>
         </nav>
     </header>
-   
     <main>
-        
-        <section id="events">
-            <h2>Próximos Eventos</h2>
-            <div class="events-list">
-                <article class="event">
-                    <h3>Limpeza da Praia Central</h3>
-                    <p>Data: 20/06/2024</p>
-                    <p>Local: Praia Central, Cidade X</p>
-                    <p>Junte-se a nós para uma grande limpeza de praia. Todos os materiais serão fornecidos.</p>
-                    <a href="#">Saiba mais</a>
-                </article>
-                <article class="event">
-                    <h3>Palestra sobre Biologia Marinha</h3>
-                    <p>Data: 25/06/2024</p>
-                    <p>Local: Auditório da Universidade Y</p>
-                    <p>Uma palestra educativa com o Dr. Carlos Souza sobre a importância da biologia marinha.</p>
-                    <a href="#">Saiba mais</a>
-                </article>
-                <article class="event">
-                    <h3>Workshop de Reciclagem</h3>
-                    <p>Data: 30/06/2024</p>
-                    <p>Local: Centro Comunitário Z</p>
-                    <p>Aprenda técnicas práticas de reciclagem e como implementar programas de reciclagem na sua comunidade.</p>
-                    <a href="#">Saiba mais</a>
-                </article>
+        <section id="education">
+            <h2>Eventos</h2>
+            <div class="education-resources" id="education-resources">
+                <!-- Eventos carregados dinamicamente -->
             </div>
-            <button type="button"><a href="../html/new_event.html">Adicionar Evento</a></button>
+            <button type="button" id="load-more-resources">Carregar Mais</button>
+            <button type="ibutton" id="ibutton" class="ibutton" onclick="showSuccessMessage()">Carregar Mais</button>
         </section>
-
     </main>
-
     <footer>
         <p>&copy; 2024 OceanGreen. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="Imagem do Recurso">
+            <h3 id="modal-title"></h3>
+            <p id="modal-author-date"></p>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+    <script>function showSuccessMessage() {alert("Em breve você poderá ver novos eventos!");}</script>
+    <script src="../script/evento.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/scripts.js"></script>
-    
 </body>
 </html>
