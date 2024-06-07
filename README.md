@@ -31,7 +31,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para r
 
 ## Autores
 
-Vinicius Leopoldino 
+ 
+[![Vinicius Leopoldino](https://skillicons.dev/icons?i=github&perline=1)](https://skillicons.dev)
 
 ## Licença
 
