@@ -38,11 +38,13 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para r
 
 Pablo Lopes
 
-[![Pablo Lopes](https://skillicons.dev/icons?i=github&perline=1)](https://github.com/Pablo0703)
+[![Pablo Lopes](https://skillicons.dev/icons?i=github&perline=2)](https://github.com/Pablo0703)
+[![Pablo Lopes](https://skillicons.dev/icons?i=linkedin&perline=1)](https://www.linkedin.com/in/pablo-lopes-09a66a275/)
 
 Diego Santos
 
-[![Diego Santos](https://skillicons.dev/icons?i=github&perline=1)](https://github.com/sashabiceps)
+[![Diego Santos](https://skillicons.dev/icons?i=github&perline=2)](https://github.com/sashabiceps)
+[![Pablo Lopes](https://skillicons.dev/icons?i=linkedin&perline=1)](https://www.linkedin.com/in/diego-santos-cardoso-51329430b/)
 
 ## Licença
 
