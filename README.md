@@ -33,8 +33,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para r
 
  Vinicius Leopoldino
 
-[![Vinicius Leopoldino](https://skillicons.dev/icons?i=github,linkedin&perline=2)](https://github.com/ViniciusLeopoldino,https://www.linkedin.com/in/vinicius-leopoldino-de-oliveira-9a2194120/)
-
+[![Vinicius Leopoldino](https://skillicons.dev/icons?i=github&perline=2)](https://github.com/ViniciusLeopoldino)
+[![Vinicius Leopoldino](https://skillicons.dev/icons?i=linkedin&perline=2)](https://www.linkedin.com/in/vinicius-leopoldino-de-oliveira-9a2194120/)
 Pablo Lopes
 
 [![Pablo Lopes](https://skillicons.dev/icons?i=github&perline=1)](https://github.com/Pablo0703)
