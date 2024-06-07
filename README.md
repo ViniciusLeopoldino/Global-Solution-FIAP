@@ -29,9 +29,9 @@ git clone https://github.com/ViniciusLeopoldino/Global-Solution-FIAP.git
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para relatar bugs ou propor novas funcionalidades. Pull requests também são aceitos.
 
-## Autor
+## Autores
 
-Vinicius Leopoldino
+Vinicius Leopoldino [link](https://github.com/ViniciusLeopoldino)
 
 ## Licença
 
